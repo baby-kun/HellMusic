@@ -1,5 +1,6 @@
 import re
 import asyncio
+import aiohttp
 
 from Config import ASSISTANT_NAME, BOT_USERNAME, IMG_1, IMG_2, IMG_6
 from HellMusic.inline import stream_markup
