@@ -6,6 +6,7 @@ import aiofiles
 from Config import ASSISTANT_NAME, BOT_USERNAME, IMG_1, IMG_2, IMG_6
 from HellMusic.inline import stream_markup
 from Process.fonts import CHAT_TITLE
+from PIL import Image, ImageDraw, ImageFont
 from Process.filters import command, other_filters
 from Process.queues import QUEUE, add_to_queue
 from ImageFont.main import call_py, user
@@ -240,7 +241,8 @@ async def vplay(c: Client, m: Message):
                       reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("💭 Support", url=f"https://t.me/Freia_Support")
+                            InlineKeyboardButton("📣 Channel", url=f"https://t.me/BotDuniya"),
+                            InlineKeyboardButton("💭 Support", url=f"https://t.me/Pmpermit")
                         ],
                         [
                             InlineKeyboardButton("🗑 Close", callback_data="cls")
@@ -316,7 +318,8 @@ async def vplay(c: Client, m: Message):
                       reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("💭 Support", url=f"https://t.me/Freia_Support")
+                            InlineKeyboardButton("📣 Channel", url=f"https://t.me/BotDuniya"),
+                            InlineKeyboardButton("💭 Support", url=f"https://t.me/pmpermit")
                         ],
                         [
                             InlineKeyboardButton("🗑 Close", callback_data="cls")
