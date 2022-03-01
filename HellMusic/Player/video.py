@@ -318,7 +318,7 @@ async def vplay(c: Client, m: Message):
                       reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("💭 Support", url=f"https://t.me/Freia_Support")
+                            InlineKeyboardButton("💭 Support", url=f"https://t.me/eruXsupport")
                         ],
                         [
                             InlineKeyboardButton("🗑 Close", callback_data="cls")
