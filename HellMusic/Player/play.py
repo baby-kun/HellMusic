@@ -26,6 +26,7 @@ from youtubesearchpython import VideosSearch
 import youtube_dl
 
 
+Play_img = "https://telegra.ph/file/dff2c244bf123e7431b39.jpg"
 
 def ytsearch(query: str):
     try:
@@ -238,13 +239,13 @@ async def play(c: Client, m: Message):
     else:
         if len(m.command) < 2:
          await m.reply_photo(
-                     photo=f"{IMG_5}",
+                     photo=play_img,
                     caption="💬**Usage: /play Give a Title Song To Play Music or /vplay for Video Play**"
                     ,
                       reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("💭 Support", url=f"https://t.me/Freia_Support")
+                            InlineKeyboardButton("💭 Support", url=f"https://t.me/sinxsupport")
                         ],
                         [
                             InlineKeyboardButton("🗑 Close", callback_data="cls")
