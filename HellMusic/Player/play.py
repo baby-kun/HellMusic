@@ -130,7 +130,7 @@ async def play(c: Client, m: Message):
                       InlineKeyboardButton('⏭️', callback_data="skip"),
                       InlineKeyboardButton("▶️", callback_data="cbresume"),
                   ],[
-                      InlineKeyboardButton("•Support", url=f"https://t.me/eruXsupport"),
+                      InlineKeyboardButton("•Support", url=f"https://t.me/sinxsupport"),
                   ],[
                       InlineKeyboardButton("🗑 Close", callback_data="cls")],
                   ]
@@ -254,7 +254,7 @@ async def play(c: Client, m: Message):
             )
         else:
             suhu = await m.reply_text(
-        f"**ERU Downloader**\n\n0% ▓▓▓▓▓▓▓▓▓▓▓▓ 100%"
+        f"**Hinata is processing**\n\n📥 processing....."
     )
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
